@@ -1,0 +1,63 @@
+.home-page-landing {
+  background-image: url(../../../assets/HomePage/Landing/landing@2x.webp);
+  background-size: cover;
+  @include page-padding;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem 5rem 7rem;
+  }
+
+  .landing {
+    &__heading {
+      font-size: 5rem;
+      color: $light-green-1;
+      max-width: 50rem;
+      margin-bottom: 1.5rem;
+
+      &-sub {
+        color: $white;
+      }
+
+      &-tm {
+        font-size: 2rem;
+        margin-left: -1rem;
+      }
+    }
+
+    &__description {
+      font-size: 2rem;
+      color: $white;
+      max-width: 60rem;
+      line-height: 1.5;
+      margin-bottom: 3rem;
+    }
+
+    &__buttons {
+    }
+
+    &__button {
+      background-color: $white;
+      font-weight: 500;
+      border-radius: 0.3rem;
+      cursor: pointer;
+
+      &-1 {
+        background-color: $light-green-2;
+        color: $white;
+        margin-right: 2rem;
+
+        &:hover {
+          background-color: $dark-green-1;
+        }
+      }
+
+      &-2 {
+        color: $light-green-3;
+
+        &:hover {
+          color: $dark-green-1;
+        }
+      }
+    }
+  }
+}

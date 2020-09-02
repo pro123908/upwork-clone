@@ -8,8 +8,28 @@
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-high) {
+    font-size: 45%;
+  }
 }
 
 body {
   box-sizing: border-box;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 1rem 3rem;
+  font-family: inherit;
+  font-size: inherit;
 }

@@ -9,8 +9,8 @@ import GE from "../../../assets/HomePage/Trusted/ge.e4f1cde.svg";
 const Trusted = () => {
   let brandsArray = [Microsoft, Airbnb, GE, Automatic, Bissell, Coty];
 
-  let brandsContent = brandsArray.map((brandImage) => (
-    <div className="trusted__brand">
+  let brandsContent = brandsArray.map((brandImage, index) => (
+    <div key={index} className="trusted__brand">
       <img src={brandImage} className="trusted__image" />
     </div>
   ));

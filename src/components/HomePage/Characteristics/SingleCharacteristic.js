@@ -9,7 +9,7 @@ const SingleCharacteristic = ({ image, title, text, linkText, reverse }) => {
         <div className="characteristic__heading">{title}</div>
         <div className="characteristic__text">{text}</div>
         <div className="characteristic__link">
-          <i class="fas fa-arrow-right characteristic__icon"></i>
+          <i className="fas fa-arrow-right characteristic__icon"></i>
           {linkText}
         </div>
       </div>

@@ -21,8 +21,8 @@ const Categories = () => {
     { text: "Engineering & Architecture", image: Architecture },
   ];
 
-  let categoriesContent = categoriesArray.map(({ text, image }) => (
-    <CategoryBox text={text} image={image} />
+  let categoriesContent = categoriesArray.map(({ text, image }, index) => (
+    <CategoryBox key={index} text={text} image={image} />
   ));
 
   return (

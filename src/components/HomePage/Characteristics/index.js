@@ -43,8 +43,9 @@ const Characteristics = () => {
   ];
 
   let characteristicsContent = characteristicsArray.map(
-    ({ title, text, linkText, image, reverse }) => (
+    ({ title, text, linkText, image, reverse }, index) => (
       <SingleCharacteristic
+        key={index}
         title={title}
         text={text}
         linkText={linkText}

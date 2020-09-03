@@ -29,6 +29,10 @@ const Categories = () => {
     <div className="home-page-categories">
       <div className="categories__heading">Find quality talent or agencies</div>
       <div className="categories__container">{categoriesContent}</div>
+      <div className="categories__footer">
+        Don’t see what you’re looking for?
+        <span className="categories__link">See all categories</span>
+      </div>
     </div>
   );
 };

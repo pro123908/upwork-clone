@@ -6,6 +6,9 @@ const CategoryBox = ({ image, text }) => {
     <div className="category-box">
       <img src={image} className="category-box__image" />
       <div className="category-box__text">{text}</div>
+      <div class="category-box__icon">
+        <i class="fas fa-chevron-right"></i>
+      </div>
     </div>
   );
 };

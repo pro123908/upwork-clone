@@ -18,7 +18,11 @@ html {
   }
 
   @media only screen and (max-width: $bp-high) {
-    font-size: 45%;
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 62.5%;
   }
 }
 

@@ -46,6 +46,7 @@
 
     &__link {
       color: $light-green-3;
+      cursor: pointer;
 
       @media only screen and (max-width: $bp-small) {
         display: block;

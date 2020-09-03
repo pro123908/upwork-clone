@@ -6,7 +6,7 @@ const Landing = () => {
       <div className="landing__heading">
         In-demand talent on demand.
         <div className="landing__heading-sub">
-          Upwork is how. <sup className="landing__heading-tm">&trade;</sup>
+          Upwork is how.<sup className="landing__heading-tm">&trade;</sup>
         </div>
       </div>
       <div className="landing__description">

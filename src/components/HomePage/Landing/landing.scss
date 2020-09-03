@@ -20,7 +20,6 @@
 
       &-tm {
         font-size: 2rem;
-        margin-left: -1rem;
       }
     }
 
@@ -33,6 +32,11 @@
     }
 
     &__buttons {
+      display: flex;
+
+      @media only screen and (max-width: $bp-minimal) {
+        flex-direction: column;
+      }
     }
 
     &__button {
@@ -45,6 +49,11 @@
         background-color: $light-green-2;
         color: $white;
         margin-right: 2rem;
+
+        @media only screen and (max-width: $bp-minimal) {
+          margin-right: 0rem;
+          margin-bottom: 2rem;
+        }
 
         &:hover {
           background-color: $dark-green-1;

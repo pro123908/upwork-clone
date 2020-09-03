@@ -1,0 +1,77 @@
+.home-page-hire-scope {
+  @include page-padding;
+
+  background-color: $gray-1;
+
+  @media only screen and (max-width: $bp-semi) {
+    padding: 4rem 5rem 7rem;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-largest) {
+    flex-direction: column;
+  }
+  .hire-scope {
+    &__text {
+      flex: 1;
+      font-weight: 600;
+      font-size: 1.8rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__scope-box {
+      display: flex;
+      flex: 3;
+      background-color: $white;
+      padding: 2rem 1rem;
+      border: 1px solid darken($gray-1, 10%);
+
+      @media only screen and (max-width: $bp-semi) {
+        flex-direction: column;
+        width: 60%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
+    }
+
+    &__scope {
+      margin-right: 2rem;
+      padding: 2rem 2rem 2rem 1rem;
+
+      &:not(:last-child) {
+        border-right: 1px solid darken($gray-1, 10%);
+        border-bottom: 0px solid darken($gray-1, 10%);
+
+        @media only screen and (max-width: $bp-semi) {
+          border-right-width: 0;
+          border-bottom-width: 1px;
+        }
+      }
+      &-line {
+        height: 0.6rem;
+        width: 3rem;
+        background-color: $light-green-4;
+        margin-bottom: 1rem;
+      }
+
+      &-heading {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      &-text {
+        font-size: 1.4rem;
+        max-width: 60rem;
+      }
+    }
+  }
+}

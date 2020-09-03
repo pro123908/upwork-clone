@@ -2,6 +2,7 @@ import React from "react";
 import Landing from "../../components/HomePage/Landing";
 import Categories from "../../components/HomePage/Categories";
 import Trusted from "../../components/HomePage/Trusted";
+import HireScope from "../../components/HomePage/HireScope";
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Landing />
       <Categories />
       <Trusted />
+      <HireScope />
     </div>
   );
 };

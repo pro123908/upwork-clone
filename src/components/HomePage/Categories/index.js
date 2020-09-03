@@ -31,7 +31,7 @@ const Categories = () => {
       <div className="categories__container">{categoriesContent}</div>
       <div className="categories__footer">
         Don’t see what you’re looking for?
-        <span className="categories__link">See all categories</span>
+        <span className="categories__link"> See all categories</span>
       </div>
     </div>
   );

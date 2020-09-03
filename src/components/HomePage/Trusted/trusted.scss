@@ -1,0 +1,49 @@
+.home-page-trusted {
+  @include page-padding;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem 5rem 7rem;
+  }
+
+  .trusted {
+    &__text {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 2rem;
+      }
+    }
+
+    &__brands {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media only screen and (max-width: $bp-largest) {
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+      }
+    }
+
+    &__brand {
+      margin-right: 3rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-bottom: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__image {
+    }
+  }
+}

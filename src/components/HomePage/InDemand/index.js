@@ -1,38 +1,7 @@
 import React from "react";
-import WebDev from "../../../assets/HomePage/Indemand/web-dev.72c8316.svg";
-import MobDev from "../../../assets/HomePage/Indemand/mobile-dev.5c07b90.svg";
-import Design from "../../../assets/HomePage/Indemand/design.1c1a75b.svg";
-import Writing from "../../../assets/HomePage/Indemand/writing.db05e7e.svg";
-import Marketing from "../../../assets/HomePage/Indemand/marketing.799abf4.svg";
-import Accounting from "../../../assets/HomePage/Indemand/accounting.9366f11.svg";
-const InDemand = () => {
-  let inDemandProfessionsArray = [
-    {
-      image: WebDev,
-      title: "Web Dev",
-    },
-    {
-      image: MobDev,
-      title: "Mobile Dev",
-    },
-    {
-      image: Design,
-      title: "Design",
-    },
-    {
-      image: Writing,
-      title: "Writing",
-    },
-    {
-      image: Marketing,
-      title: "Marketing",
-    },
-    {
-      image: Accounting,
-      title: "Accounting",
-    },
-  ];
+import { inDemandProfessionsArray } from "../../../Data/HomePageData";
 
+const InDemand = () => {
   let inDemandProfessionsContent = inDemandProfessionsArray.map(
     ({ title, image }, index) => (
       <div className="in-demand__profession" key={index}>

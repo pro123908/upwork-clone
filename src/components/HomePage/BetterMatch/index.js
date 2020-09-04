@@ -1,38 +1,7 @@
 import React from "react";
 import BetterMatchBox from "./BetterMatchBox";
-import Talent from "../../../assets/HomePage/BetterMatch/talentNetwork.svg";
-import Instantly from "../../../assets/HomePage/BetterMatch/instantly.svg";
-import OnePlace from "../../../assets/HomePage/BetterMatch/onePlace.svg";
-import ClearView from "../../../assets/HomePage/BetterMatch/clearView.svg";
-
+import { BetterMatchArray } from "../../../Data/HomePageData";
 const BetterMatch = () => {
-  let BetterMatchArray = [
-    {
-      image: Talent,
-      heading: "Tap into an amazing talent network",
-      text:
-        "Get unmatched quality from proven independent professionals and specialized agencies.",
-    },
-    {
-      image: Instantly,
-      heading: "Get a smarter shortlist, instantly",
-      text:
-        "Our instant matching tech generates a shortlist based on the criteria you select.",
-    },
-    {
-      image: OnePlace,
-      heading: "Manage everything in one place",
-      text:
-        "Manage shortlisting, interviewing, onboarding, and payments all from Upwork.",
-    },
-    {
-      image: ClearView,
-      heading: "Get a clear view of the work",
-      text:
-        "Easily track project milestones and progress toward the completion of your jobs.",
-    },
-  ];
-
   let BetterMatchContent = BetterMatchArray.map(
     ({ image, heading, text }, index) => (
       <BetterMatchBox key={index} image={image} heading={heading} text={text} />

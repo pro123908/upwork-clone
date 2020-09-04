@@ -1,0 +1,28 @@
+.multi-button {
+  font-weight: 500;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.green-button {
+  background-color: $light-green-2;
+  color: $white;
+  margin-right: 2rem;
+
+  &:hover {
+    background-color: $dark-green-1;
+  }
+
+  @media only screen and (max-width: $bp-minimal) {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+}
+.white-button {
+  color: $light-green-3;
+  background-color: $white;
+  box-shadow: 0rem 0rem 1rem 0.5rem rgba($black, 0.2);
+  &:hover {
+    color: $dark-green-1;
+  }
+}

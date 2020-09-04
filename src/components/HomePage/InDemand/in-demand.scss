@@ -1,0 +1,117 @@
+.home-page-in-demand {
+  @include page-padding;
+
+  @media only screen and (max-width: $bp-high) {
+    padding: 4rem 5rem 7rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 4rem 2rem 7rem;
+  }
+
+  .in-demand {
+    &__line {
+      width: 5rem;
+      height: 0.7rem;
+      background-color: $red-1;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+
+    &__heading {
+      font-size: 2.3rem;
+      font-weight: 500;
+      text-align: center;
+      color: $dark-blue-1;
+      margin-bottom: 2rem;
+    }
+
+    &__projects {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+      @media only screen and (max-width: $bp-semi) {
+        flex-direction: column;
+      }
+
+      &-icon {
+        margin-right: 1rem;
+        color: $light-green-2;
+      }
+
+      &-type {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-right: 5rem;
+        @media only screen and (max-width: $bp-semi) {
+          flex-direction: column;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &__professions-box {
+      display: flex;
+
+      box-shadow: 0rem 0rem 1rem rgba($black, 0.2);
+
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      max-width: 100rem;
+
+      @media only screen and (max-width: $bp-semi) {
+        flex-direction: row;
+        // box-shadow: none;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__profession {
+      border-right: 1px solid darken($gray-1, 10%);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // max-width: 18rem;
+      flex: 1;
+
+      @media only screen and (max-width: $bp-semi) {
+        border-bottom: 1px solid darken($gray-1, 10%);
+      }
+      &-all {
+        font-size: 1.4rem;
+        color: $light-green-2;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      &-image {
+        margin-bottom: 1rem;
+        height: 3rem;
+      }
+
+      &-title {
+        text-align: center;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      @media only screen and (max-width: $bp-minimal) {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    &__button {
+      padding: 0.8rem 3rem;
+      width: 18rem;
+
+      @media only screen and (max-width: $bp-minimal) {
+        width: 100%;
+      }
+    }
+  }
+}

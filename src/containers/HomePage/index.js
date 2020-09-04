@@ -5,6 +5,7 @@ import Trusted from "../../components/HomePage/Trusted";
 import HireScope from "../../components/HomePage/HireScope";
 import Characteristics from "../../components/HomePage/Characteristics";
 import BetterMatch from "../../components/HomePage/BetterMatch";
+import InDemand from "../../components/HomePage/InDemand";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <HireScope />
       <Characteristics />
       <BetterMatch />
+      <InDemand />
     </div>
   );
 };

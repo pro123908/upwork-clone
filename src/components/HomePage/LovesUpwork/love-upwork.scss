@@ -5,7 +5,7 @@
     padding: 4rem 5rem 7rem;
   }
 
-  @media only screen and (max-width: $bp-minimal) {
+  @media only screen and (max-width: $bp-small) {
     padding: 4rem 1rem 7rem;
   }
 
@@ -34,6 +34,7 @@
       cursor: pointer;
       display: flex;
       align-items: flex-end;
+      margin-bottom: 5rem;
 
       @media only screen and (max-width: $bp-semi) {
         flex-direction: column;
@@ -68,6 +69,189 @@
 
     &__logo {
       //   align-self: center;
+    }
+
+    &__nasdaq {
+      background: url(../../../assets/HomePage/LovesUpwork/bg_full.svg);
+      background-size: cover;
+      background-position: center;
+
+      color: $white;
+      padding: 5rem 0rem;
+      text-align: center;
+      margin-bottom: 3rem;
+
+      @media only screen and (max-width: $bp-semi) {
+        // width: 80%;
+        padding: 5rem 2rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
+
+      &-heading {
+        font-size: 2.3rem;
+        margin-bottom: 2.3rem;
+        font-weight: 500;
+      }
+
+      &-logo {
+        margin-bottom: 3rem;
+      }
+
+      &-description {
+        max-width: 62%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: $bp-semi) {
+          max-width: 90%;
+        }
+      }
+
+      &-read {
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
+
+      &-stats {
+        display: flex;
+        justify-content: space-around;
+
+        @media only screen and (max-width: $bp-semi) {
+          flex-direction: column;
+        }
+      }
+
+      &-stat {
+        @media only screen and (max-width: $bp-semi) {
+          margin-bottom: 2rem;
+        }
+        &Upper {
+          color: $light-green-1;
+          font-size: 2.8rem;
+          font-weight: 500;
+          margin-bottom: 1rem;
+        }
+
+        &Bottom {
+        }
+      }
+    }
+
+    &__GE-GoDaddy {
+      display: flex;
+
+      @media only screen and (max-width: $bp-high) {
+        flex-direction: column;
+      }
+    }
+
+    &__GE {
+      background-color: $red-1;
+      color: $white;
+      margin-right: 3rem;
+      padding: 5rem 0rem;
+      text-align: center;
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (max-width: $bp-high) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+
+      &-heading {
+        font-size: 2.3rem;
+        margin-bottom: 2.3rem;
+        font-weight: 500;
+        width: 80%;
+      }
+
+      &-logo {
+        margin-bottom: 3rem;
+        height: 6rem;
+      }
+
+      &-description {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: $bp-semi) {
+          max-width: 90%;
+        }
+      }
+
+      &-read {
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
+    }
+
+    &__GoDaddy {
+      background-color: $orange-1;
+      color: $white;
+
+      padding: 5rem 0rem;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-heading {
+        font-size: 2.3rem;
+
+        margin-bottom: 2.3rem;
+        font-weight: 500;
+        max-width: 80%;
+      }
+
+      &-logo {
+        margin-bottom: 3rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &-description {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: $bp-semi) {
+          max-width: 90%;
+        }
+      }
+
+      &-read {
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
     }
   }
 }

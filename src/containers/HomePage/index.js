@@ -8,6 +8,7 @@ import BetterMatch from "../../components/HomePage/BetterMatch";
 import InDemand from "../../components/HomePage/InDemand";
 import LovesUpwork from "../../components/HomePage/LovesUpwork";
 import Skills from "../../components/HomePage/Skills";
+import Banner from "../../components/HomePage/Banner";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
       <InDemand />
       <LovesUpwork />
       <Skills />
+      <Banner />
     </div>
   );
 };

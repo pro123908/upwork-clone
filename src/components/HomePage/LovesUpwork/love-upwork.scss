@@ -1,0 +1,73 @@
+.home-page-loves-upwork {
+  @include page-padding;
+
+  @media only screen and (max-width: $bp-high) {
+    padding: 4rem 5rem 7rem;
+  }
+
+  @media only screen and (max-width: $bp-minimal) {
+    padding: 4rem 1rem 7rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .loves-upwork {
+    &__line {
+      width: 5rem;
+      height: 0.7rem;
+      background-color: $orange-1;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+    &__heading {
+      color: $dark-blue-1;
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    &__client-rate {
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-end;
+
+      @media only screen and (max-width: $bp-semi) {
+        flex-direction: column;
+        align-items: center;
+        height: 15rem;
+        justify-content: space-between;
+      }
+    }
+
+    &__rating {
+      font-weight: 500;
+      font-size: 1.8rem;
+      letter-spacing: 0.2rem;
+      margin: 0 1rem;
+    }
+
+    &__stars {
+      color: $light-green-2;
+      margin-right: 0.5rem;
+    }
+
+    &__reviews {
+      color: $light-green-2;
+      margin: 0 1rem;
+      font-weight: 500;
+
+      &:hover {
+        color: $dark-green-1;
+        text-decoration-line: underline;
+      }
+    }
+
+    &__logo {
+      //   align-self: center;
+    }
+  }
+}

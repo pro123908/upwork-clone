@@ -48,6 +48,10 @@
       border-bottom: 1px solid darken($gray-1, 10%);
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 1rem;
+    }
+
     &__image-container {
       text-align: center;
       margin-bottom: 2rem;

@@ -7,6 +7,7 @@ import Characteristics from "../../components/HomePage/Characteristics";
 import BetterMatch from "../../components/HomePage/BetterMatch";
 import InDemand from "../../components/HomePage/InDemand";
 import LovesUpwork from "../../components/HomePage/LovesUpwork";
+import Skills from "../../components/HomePage/Skills";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <BetterMatch />
       <InDemand />
       <LovesUpwork />
+      <Skills />
     </div>
   );
 };

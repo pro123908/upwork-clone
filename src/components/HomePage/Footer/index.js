@@ -50,8 +50,40 @@ const Footer = () => {
             {linksBrowseArrayContent}
           </div>
         </div>
-        <div className="footer__links-browse"></div>
       </div>
+
+      <div className="footer__social-links-area">
+        <div className="footer__social-links">
+          <div className="footer__social-links-text">Follow us</div>
+          <div className="footer__social-link">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div className="footer__social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div className="footer__social-link">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div className="footer__social-link">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div className="footer__social-link">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div className="footer__social-links">
+          <div className="footer__social-links-text">Mobile app</div>
+
+          <div className="footer__social-link">
+            <i class="fab fa-apple"></i>
+          </div>
+
+          <div className="footer__social-link">
+            <i class="fab fa-android"></i>
+          </div>
+        </div>
+      </div>
+      <div className="footer__bottom">© 2015 - 2020 Upwork® Global Inc.</div>
     </div>
   );
 };

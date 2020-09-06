@@ -9,6 +9,7 @@ import InDemand from "../../components/HomePage/InDemand";
 import LovesUpwork from "../../components/HomePage/LovesUpwork";
 import Skills from "../../components/HomePage/Skills";
 import Banner from "../../components/HomePage/Banner";
+import Footer from "../../components/HomePage/Footer";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
       <LovesUpwork />
       <Skills />
       <Banner />
+      <Footer />
     </div>
   );
 };

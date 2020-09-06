@@ -1,5 +1,5 @@
 let arr = document.querySelectorAll(
-  ".vs-link-text.vs-color-text.vs-max-width-100.ellipsis.d-block.pull-left"
+  ".visitor-accordion-content.d-md-block.d-none ul li a"
 );
 
 let skillsArr = [];

@@ -248,3 +248,34 @@ export const topCitiesUSArray = [
   "San Jose, CA Freelancers",
   "Seattle, WA Freelancers",
 ];
+
+export const linksCompanyArray = [
+  "About Us",
+  "Investor Relations",
+  "Careers",
+  "Upwork Foundation",
+  "Press",
+  "Trust, Safety & Security",
+  "Terms of Service",
+  "Privacy Policy",
+  "Accessibility",
+];
+
+export const linksResourcesArray = [
+  "Resources",
+  "Customer Support",
+  "Customer Stories",
+  "Business Resources",
+  "Payroll Services",
+  "Upwork Reviews",
+];
+
+export const linksBrowseArray = [
+  "Freelancers by Skill",
+  "Freelancers in USA",
+  "Freelancers in UK",
+  "Freelancers in Canada",
+  "Freelancers in Australia",
+  "Jobs in USA",
+  "Find Jobs",
+];

@@ -26,3 +26,14 @@
     color: $dark-green-1;
   }
 }
+
+.link {
+  &,
+  &:link,
+  &:visited {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+}

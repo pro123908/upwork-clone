@@ -250,32 +250,53 @@ export const topCitiesUSArray = [
 ];
 
 export const linksCompanyArray = [
-  "About Us",
-  "Investor Relations",
-  "Careers",
-  "Upwork Foundation",
-  "Press",
-  "Trust, Safety & Security",
-  "Terms of Service",
-  "Privacy Policy",
-  "Accessibility",
+  { title: "About Us", route: "https://www.upwork.com/about/" },
+  { title: "Investor Relations", route: "https://investors.upwork.com/" },
+  { title: "Careers", route: "https://careers.upwork.com/" },
+  {
+    title: "Upwork Foundation",
+    route: "https://www.upwork.com/ppc/foundation/",
+  },
+  { title: "Press", route: "https://www.upwork.com/press/" },
+  {
+    title: "Trust, Safety & Security",
+    route: "https://www.upwork.com/trust-and-safety/security/",
+  },
+  { title: "Terms of Service", route: "https://www.upwork.com/legal" },
+  { title: "Privacy Policy", route: "https://www.upwork.com/legal#privacy" },
+  {
+    title: "Accessibility",
+    route: "https://www.upwork.com/legal#accessibility",
+  },
 ];
 
 export const linksResourcesArray = [
-  "Resources",
-  "Customer Support",
-  "Customer Stories",
-  "Business Resources",
-  "Payroll Services",
-  "Upwork Reviews",
+  { title: "Resources", route: "https://www.upwork.com/resources/" },
+  { title: "Customer Support", route: "https://support.upwork.com/hc/en-us" },
+  {
+    title: "Customer Stories",
+    route: "https://www.upwork.com/customer-success",
+  },
+  {
+    title: "Business Resources",
+    route: "https://www.upwork.com/i/business-resources/",
+  },
+  {
+    title: "Payroll Services",
+    route: "https://www.upwork.com/i/payroll-client/",
+  },
+  { title: "Upwork Reviews", route: "https://www.upwork.com/reviews/" },
 ];
 
 export const linksBrowseArray = [
-  "Freelancers by Skill",
-  "Freelancers in USA",
-  "Freelancers in UK",
-  "Freelancers in Canada",
-  "Freelancers in Australia",
-  "Jobs in USA",
-  "Find Jobs",
+  { title: "Freelancers by Skill", route: "https://www.upwork.com/hire/" },
+  { title: "Freelancers in USA", route: "https://www.upwork.com/l/us/" },
+  { title: "Freelancers in UK", route: "https://www.upwork.com/l/gb/" },
+  { title: "Freelancers in Canada", route: "https://www.upwork.com/l/ca/" },
+  { title: "Freelancers in Australia", route: "https://www.upwork.com/l/au/" },
+  {
+    title: "Jobs in USA",
+    route: "https://www.upwork.com/freelance-jobs/united-states/",
+  },
+  { title: "Find Jobs", route: "https://www.upwork.com/freelance-jobs/" },
 ];

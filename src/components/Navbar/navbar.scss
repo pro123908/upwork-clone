@@ -1,11 +1,40 @@
 .navbar {
   padding: 1rem 15rem;
+  position: fixed;
+  top: 0;
+  background-color: $white;
+  // height: 10rem;
+  width: 100%;
+  height: 8rem;
 
   display: flex;
   align-items: center;
+
+  box-shadow: 0 0.1rem 0.6rem rgba($black, 0.5);
+
+  @media only screen and (max-width: $bp-mega-high) {
+    padding: 1rem 10rem;
+  }
+
+  @media only screen and (max-width: $bp-high) {
+    padding: 1rem 8rem;
+  }
+
+  @media only screen and (max-width: $bp-semi-medium) {
+    padding: 1rem 1rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    // flex-direction: column;
+    justify-content: space-around;
+  }
   &__logo {
     img {
       height: 5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        height: 3rem;
+      }
     }
 
     margin-right: 1rem;
@@ -19,14 +48,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-minimal) {
+      padding: 2rem 1rem;
+      width: 25rem;
+    }
 
     input:focus & {
       border-width: 2px;
     }
 
     input {
-      width: 28rem;
+      width: 73%;
       font-family: inherit;
 
       font-size: 1.5rem;
@@ -42,6 +83,16 @@
   }
 
   &__buttons {
+    .only-large-devices {
+      color: pink;
+      @media only screen and (max-width: $bp-mega-semi) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
 
   &__button {
@@ -51,6 +102,18 @@
     font-size: 1.5rem;
     padding: 0.5rem 3rem;
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-mega) {
+      padding: 0.5rem 1rem;
+    }
+
+    @media only screen and (max-width: $bp-mega-semi) {
+      padding: 0.5rem 3rem;
+    }
+
+    &--green {
+      border-radius: 0.2rem;
+    }
 
     &:hover {
       color: $light-green-2;

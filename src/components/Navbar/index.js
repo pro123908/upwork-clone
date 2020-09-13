@@ -13,11 +13,19 @@ const Navbar = () => {
         <input type="text" placeholder="Find Professionals & Agencies" />
       </div>
       <div className="navbar__buttons">
-        <button className="button navbar__button">How it works</button>
-        <button className="button navbar__button">solutions</button>
-        <button className="button navbar__button">Enterprise</button>
+        <button className="button navbar__button only-large-devices">
+          How it works
+        </button>
+        <button className="button navbar__button only-large-devices">
+          solutions
+        </button>
+        <button className="button navbar__button only-large-devices">
+          Enterprise
+        </button>
         <button className="button navbar__button">Log in</button>
-        <button className="button navbar__button green-button">Sign up</button>
+        <button className="button navbar__button navbar__button--green green-button">
+          Sign up
+        </button>
       </div>
     </div>
   );

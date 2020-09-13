@@ -10,10 +10,12 @@ import LovesUpwork from "../../components/HomePage/LovesUpwork";
 import Skills from "../../components/HomePage/Skills";
 import Banner from "../../components/HomePage/Banner";
 import Footer from "../../components/HomePage/Footer";
+import Navbar from "../../components/Navbar";
 
 const HomePage = () => {
   return (
     <div className="upwork-home-page">
+      <Navbar />
       <Landing />
       <Categories />
       <Trusted />

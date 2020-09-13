@@ -36,4 +36,8 @@ body {
   padding: 1rem 3rem;
   font-family: inherit;
   font-size: inherit;
+
+  &:focus {
+    outline: none;
+  }
 }

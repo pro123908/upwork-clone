@@ -14,8 +14,36 @@ const Navbar = () => {
         <label htmlFor="mobile-nav__toggle">
           <i class="fas fa-bars mobile-nav__icon"></i>
         </label>
-
-        <div className="mobile-nav__container">Data</div>
+        <div className="mobile-nav__toggler">
+          <div className="mobile-nav__container">
+            <div className="mobile-nav__header">
+              <div className="mobile-nav__logo">
+                <img src={NavbarLogo} />
+              </div>
+              <label htmlFor="mobile-nav__toggle">
+                <i class="fas fa-times mobile-nav__exit-icon"></i>
+              </label>
+            </div>
+            <div className="mobile-nav__input">
+              <i class="fas fa-search icon-green"></i>
+              <i class="fas fa-chevron-down icon-green"></i>
+              <input type="text" placeholder="Find Professionals & Agencies" />
+            </div>
+            <div className="mobile-nav__links">
+              <div className="mobile-nav__link">How it works</div>
+              <div className="mobile-nav__link">Enterprise</div>
+              <div className="mobile-nav__link">Login</div>
+              <div className="mobile-nav__link">Browse</div>
+              <div className="mobile-nav__link">Solutions</div>
+              <div className="mobile-nav__link">About Us</div>
+              <div className="mobile-nav__link">Contact Us</div>
+              <div className="mobile-nav__link">Careers</div>
+            </div>
+            <div className="mobile-nav__sign-up">
+              <button className="button green-button"> Sign Up</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="navbar__logo">
         <img src={NavbarLogo} />

@@ -28,13 +28,56 @@
     // flex-direction: column;
     justify-content: space-around;
   }
+
+  @media only screen and (max-width: $bp-minimal) {
+    justify-content: flex-start;
+  }
+
+  .mobile-nav {
+    &__icon {
+      display: none;
+      font-size: 3rem;
+      cursor: pointer;
+      margin-right: 2rem;
+      @media only screen and (max-width: $bp-minimal) {
+        display: block;
+      }
+    }
+
+    &__container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $white;
+      height: 100vh;
+      width: 0%;
+    }
+
+    &__checkbox {
+      // display: none;
+    }
+
+    &__checkbox:checked ~ &__container {
+      width: 100%;
+    }
+  }
+
   &__logo {
+    display: flex;
     img {
       height: 5rem;
 
       @media only screen and (max-width: $bp-small) {
         height: 3rem;
       }
+
+      @media only screen and (max-width: $bp-minimal) {
+        height: 4rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-minimal) {
+      margin-right: auto;
     }
 
     margin-right: 1rem;
@@ -58,8 +101,13 @@
     }
 
     @media only screen and (max-width: $bp-minimal) {
+      display: none;
       padding: 2rem 1rem;
       width: 25rem;
+
+      .fa-search {
+        display: none;
+      }
     }
 
     input:focus & {
@@ -73,6 +121,10 @@
       font-size: 1.5rem;
       border: none;
 
+      @media only screen and (max-width: $bp-minimal) {
+        width: 90%;
+      }
+
       &:focus {
         outline: none;
       }
@@ -83,6 +135,8 @@
   }
 
   &__buttons {
+    display: flex;
+    align-items: center;
     .only-large-devices {
       color: pink;
       @media only screen and (max-width: $bp-mega-semi) {
@@ -90,7 +144,7 @@
       }
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (min-width: $bp-minimal) and (max-width: $bp-medium) {
       display: none;
     }
   }
@@ -109,6 +163,11 @@
 
     @media only screen and (max-width: $bp-mega-semi) {
       padding: 0.5rem 3rem;
+    }
+
+    @media only screen and (max-width: $bp-minimal) {
+      padding: 0.5rem 1rem;
+      margin: 0rem 0.5rem;
     }
 
     &--green {

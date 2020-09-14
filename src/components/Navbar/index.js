@@ -4,6 +4,19 @@ import NavbarLogo from "../../assets/Navbar/navbar-logo.png";
 const Navbar = () => {
   return (
     <div className="navbar">
+      <div className="mobile-nav">
+        <input
+          type="checkbox"
+          className="mobile-nav__checkbox"
+          id="mobile-nav__toggle"
+        />
+
+        <label htmlFor="mobile-nav__toggle">
+          <i class="fas fa-bars mobile-nav__icon"></i>
+        </label>
+
+        <div className="mobile-nav__container">Data</div>
+      </div>
       <div className="navbar__logo">
         <img src={NavbarLogo} />
       </div>

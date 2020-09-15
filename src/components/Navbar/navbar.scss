@@ -9,7 +9,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   box-shadow: 0 0.1rem 0.6rem rgba($black, 0.5);
 
@@ -129,6 +129,10 @@
       font-size: 1.8rem;
       text-transform: uppercase;
       font-weight: 500;
+
+      &:hover {
+        color: $light-green-2;
+      }
     }
 
     &__sign-up {
@@ -157,11 +161,11 @@
     //   background-color: red;
     // }
 
-    .mobile-nav__checkbox:checked ~ .mobile-nav__toggler {
-      @media only screen and (max-width: $bp-medium) {
-        width: 100%;
-      }
-    }
+    // .mobile-nav__checkbox:checked ~ .mobile-nav__toggler {
+    //   @media only screen and (max-width: $bp-medium) {
+    //     width: 100%;
+    //   }
+    // }
   }
 
   &__logo {
@@ -272,8 +276,18 @@
       margin: 0rem 0.5rem;
     }
 
-    &--green {
+    &:last-child {
+      background-color: $light-green-2;
+      color: $white !important;
       border-radius: 0.2rem;
+
+      &:hover {
+        background-color: $dark-green-1;
+      }
+    }
+
+    &--green {
+      // border-radius: 0.2rem;
     }
 
     &:hover {

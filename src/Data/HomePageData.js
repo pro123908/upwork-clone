@@ -300,3 +300,22 @@ export const linksBrowseArray = [
   },
   { title: "Find Jobs", route: "https://www.upwork.com/freelance-jobs/" },
 ];
+
+export const navbarMobileLinks = [
+  { route: "", title: "How it works" },
+  { route: "", title: "Enterprise" },
+  { route: "", title: "Login" },
+  { route: "", title: "Browse" },
+  { route: "", title: "Solutions" },
+  { route: "", title: "About Us" },
+  { route: "", title: "Contact Us" },
+  { route: "", title: "Careers" },
+];
+
+export const navbarDesktopLinks = [
+  { route: "", title: "How it works" },
+  { route: "", title: "Solutions" },
+  { route: "", title: "Enterprise" },
+  { route: "", title: "Log in" },
+  { route: "", title: "Sign up" },
+];

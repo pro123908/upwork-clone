@@ -27,16 +27,35 @@ const Navbar = () => {
   );
 
   const navbarMobileLinksContent = navbarMobileLinks.map(
-    ({ title, route }, index) => (
-      <a
-        href={route}
-        key={index}
-        target="_blank"
-        className="link mobile-nav__link"
-      >
-        {title}
-      </a>
-    )
+    ({ title, route }, index) => {
+      if (title === "Browse") {
+        return (
+          <div key={index} className="link mobile-nav__link">
+            <div className="mobile-nav__link-title">
+              {title} <i class="fas fa-chevron-down show"></i>
+            </div>
+            <div className="mobile-nav__link-list">
+              <div>Web Dev</div>
+              <div>Web Dev</div>
+              <div>Web Dev</div>
+              <div>Web Dev</div>
+              <div>Web Dev</div>
+              <div>Web Dev</div>
+            </div>
+          </div>
+        );
+      }
+      return (
+        <a
+          href={route}
+          key={index}
+          target="_blank"
+          className="link mobile-nav__link"
+        >
+          {title}
+        </a>
+      );
+    }
   );
 
   const startAnimation = () => {
@@ -86,7 +105,13 @@ const Navbar = () => {
             </div>
             <div className="mobile-nav__links">{navbarMobileLinksContent}</div>
             <div className="mobile-nav__sign-up">
-              <button className="button green-button"> Sign Up</button>
+              <a
+                className="link green-button mobile-nav__sign-up-btn"
+                href="https://www.upwork.com/signup/?dest=home"
+                target="_blank"
+              >
+                Sign Up
+              </a>
             </div>
           </div>
         </div>

@@ -302,9 +302,9 @@ export const linksBrowseArray = [
 ];
 
 export const navbarMobileLinks = [
-  { route: "", title: "How it works" },
-  { route: "", title: "Enterprise" },
-  { route: "", title: "Login" },
+  { route: "https://www.upwork.com/i/overview/", title: "How it works" },
+  { route: "https://www.upwork.com/enterprise/", title: "Enterprise" },
+  { route: "https://www.upwork.com/ab/account-security/login", title: "Login" },
   { route: "", title: "Browse" },
   { route: "", title: "Solutions" },
   { route: "", title: "About Us" },
@@ -318,9 +318,12 @@ export const navbarMobileLinks = [
 ];
 
 export const navbarDesktopLinks = [
-  { route: "", title: "How it works" },
+  { route: "https://www.upwork.com/i/overview/", title: "How it works" },
   { route: "", title: "Solutions" },
-  { route: "", title: "Enterprise" },
-  { route: "", title: "Log in" },
-  { route: "", title: "Sign up" },
+  { route: "https://www.upwork.com/enterprise/", title: "Enterprise" },
+  {
+    route: "https://www.upwork.com/ab/account-security/login",
+    title: "Log in",
+  },
+  { route: "https://www.upwork.com/signup/?dest=home", title: "Sign up" },
 ];

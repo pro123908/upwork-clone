@@ -58,6 +58,7 @@
       left: 0;
       background-color: $white;
       height: 100vh;
+      // min-height: -webkit-fill-available;
       width: 0%;
       overflow: hidden;
       display: flex;
@@ -69,12 +70,13 @@
       }
     }
     &__container {
-      padding: 2rem 2rem;
       display: flex;
       flex-direction: column;
+      height: 100%;
     }
 
     &__header {
+      padding: 2rem 2rem;
       display: flex;
       align-items: center;
     }
@@ -93,10 +95,11 @@
 
       border: 1px solid darken($color: $gray-1, $amount: 10%);
       padding: 2rem 2rem;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin: 2rem 0;
+      margin: 2rem 2rem;
 
       input {
         width: 85%;
@@ -120,7 +123,10 @@
     }
 
     &__links {
+      padding: 2rem 2rem;
       flex: 2;
+      // margin-bottom: 3rem;
+      overflow-y: auto;
     }
 
     &__link {
@@ -136,9 +142,10 @@
     }
 
     &__sign-up {
-      position: absolute;
-      bottom: 0;
-      left: 0;
+      background-color: $white;
+      // position: absolute;
+      // bottom: 0;
+      // left: 0;
 
       padding: 2rem 2rem;
       text-align: center;
@@ -244,6 +251,7 @@
   &__buttons {
     display: flex;
     align-items: center;
+
     .only-large-devices {
       @media only screen and (max-width: $bp-mega-semi) {
         display: none;

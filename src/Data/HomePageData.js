@@ -310,6 +310,11 @@ export const navbarMobileLinks = [
   { route: "", title: "About Us" },
   { route: "", title: "Contact Us" },
   { route: "", title: "Careers" },
+  { route: "", title: "Mobile Link 1" },
+  { route: "", title: "Mobile Link 2" },
+  { route: "", title: "Mobile Link 3" },
+  { route: "", title: "Mobile Link 4" },
+  { route: "", title: "Mobile Link 5" },
 ];
 
 export const navbarDesktopLinks = [

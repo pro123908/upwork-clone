@@ -47,7 +47,7 @@
   &,
   &:link,
   &:visited {
-    color: $black;
+    // color: $black;
     text-decoration: none;
     display: block;
     cursor: pointer;
@@ -81,4 +81,14 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.input {
+  border: 1px solid rgba($black, 0.2);
+  padding: 0.5rem 2rem;
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+  }
 }

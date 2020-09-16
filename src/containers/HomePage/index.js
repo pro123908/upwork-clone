@@ -15,7 +15,7 @@ import Navbar from "../../components/Navbar";
 const HomePage = () => {
   return (
     <div className="upwork-home-page">
-      <Navbar />
+      <Navbar showSearch showNavLinks showMobileNav />
       <Landing />
       <Categories />
       <Trusted />

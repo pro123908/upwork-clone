@@ -1,0 +1,33 @@
+.upwork-inputWithButton {
+  align-self: stretch;
+  border: 1.5px solid rgba($black, 0.1);
+  margin-bottom: 2rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+
+  &:focus-within {
+    border: 1.5px solid darken($color: $dark-green-1, $amount: 10%);
+  }
+
+  &__input {
+    border: none;
+    padding: 0rem 2rem;
+
+    flex: 1;
+    &::-webkit-input-placeholder {
+      letter-spacing: 0.1rem;
+      font-weight: 300;
+      color: $black;
+    }
+  }
+
+  &__button {
+    align-self: stretch;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba($color: $black, $alpha: 0.3);
+    }
+  }
+}

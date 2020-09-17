@@ -28,16 +28,59 @@
     font-size: 2.5rem;
   }
 
-  &__input {
+  &__input-container {
     align-self: stretch;
-    margin: 1rem;
-
     border: 1.5px solid rgba($black, 0.1);
+    margin: 2rem 0rem;
+    padding: 0.5rem 2rem;
+    display: flex;
 
+    &:focus-within {
+      border: 1.5px solid darken($color: $dark-green-1, $amount: 10%);
+    }
+  }
+
+  &__input {
+    border: none;
+    padding: 0rem 2rem;
+
+    flex: 1;
     &::-webkit-input-placeholder {
       letter-spacing: 0.1rem;
       font-weight: 300;
       color: $black;
+    }
+  }
+
+  //   &__input:focus &__input-container {
+  //     box-shadow: 0 0.5rem 1rem rgba($color: $light-green-2, $alpha: 0.3);
+  //   }
+
+  &__button-continue {
+    align-self: stretch;
+    padding: 0.5rem 3rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba($color: $black, $alpha: 0.3);
+    }
+  }
+
+  &__button-google {
+    margin-bottom: 2rem;
+    align-self: stretch;
+
+    &:hover {
+      box-shadow: 0 0.1rem 1rem rgba($color: $black, $alpha: 0.3);
+    }
+  }
+
+  &__button-apple {
+    margin-bottom: 2rem;
+    align-self: stretch;
+
+    &:hover {
+      box-shadow: 0 0.1rem 1rem rgba($color: $black, $alpha: 0.3);
     }
   }
 }

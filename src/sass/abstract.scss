@@ -4,6 +4,7 @@
   padding: 1rem 3rem;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -19,7 +20,7 @@
 .green-button {
   background-color: $light-green-2;
   color: $white !important;
-  margin-right: 2rem;
+  // margin-right: 2rem;
 
   &:hover {
     background-color: $dark-green-1;
@@ -85,10 +86,55 @@
 
 .input {
   border: 1px solid rgba($black, 0.2);
-  padding: 0.5rem 2rem;
+  // padding: 0.5rem 2rem;
   font-family: inherit;
 
   &:focus {
     outline: none;
+  }
+}
+
+.google-button {
+  border: 1px solid $blue-1;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    padding: 1rem 1.5rem;
+    color: darken($blue-1, 20%);
+  }
+
+  &__text {
+    background-color: $blue-1;
+    color: $white;
+    display: inline-block;
+    padding: 1rem 3rem;
+    flex: 1;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+.apple-button {
+  border: 1px solid $black;
+  border-radius: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    padding: 1rem 0rem;
+  }
+
+  &__text {
+    display: inline-block;
+    padding: 1rem 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
   }
 }

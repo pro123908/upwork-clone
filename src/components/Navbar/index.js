@@ -4,6 +4,8 @@ import { navbarDesktopLinks, navbarMobileLinks } from "../../Data/HomePageData";
 
 import gsap, { TweenMax, Power3, TimelineMax } from "gsap";
 
+import { Link } from "react-router-dom";
+
 gsap.registerPlugin(TweenMax, Power3, TimelineMax);
 
 const Navbar = ({ showSearch, showNavLinks, showMobileNav }) => {
@@ -14,16 +16,29 @@ const Navbar = ({ showSearch, showNavLinks, showMobileNav }) => {
   });
 
   const navbarDesktopLinksContent = navbarDesktopLinks.map(
-    ({ title, route }, index) => (
-      <a
-        href={route}
-        key={index}
-        target="_blank"
-        className="link navbar__button only-large-devices"
-      >
-        {title}
-      </a>
-    )
+    ({ title, route }, index) => {
+      if (title === "Log in") {
+        return (
+          <Link
+            key={index}
+            className="link navbar__button only-large-devices"
+            to={route}
+          >
+            {title}
+          </Link>
+        );
+      }
+      return (
+        <a
+          href={route}
+          key={index}
+          target="_blank"
+          className="link navbar__button only-large-devices"
+        >
+          {title}
+        </a>
+      );
+    }
   );
 
   const navbarMobileLinksContent = navbarMobileLinks.map(
@@ -43,6 +58,14 @@ const Navbar = ({ showSearch, showNavLinks, showMobileNav }) => {
               <div>Web Dev</div>
             </div>
           </div>
+        );
+      }
+
+      if (title === "Login") {
+        return (
+          <Link key={index} className="link mobile-nav__link" to={route}>
+            {title}
+          </Link>
         );
       }
       return (

@@ -7,7 +7,7 @@ const Banner = () => {
         Access specialized talent on your terms
       </div>
       <div className="banner__buttons">
-        <button class="button multi-button green-button banner__button mb-2">
+        <button class="button multi-button green-button banner__button">
           Get Started
         </button>
         <button class="button multi-button white-button banner__button">

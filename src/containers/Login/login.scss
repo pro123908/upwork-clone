@@ -1,31 +1,68 @@
 .upwork-login {
   background-color: $gray-3;
-  height: 100vh;
+  // height: 100vh;
   margin-top: 8rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-largest) {
+    height: 90vh;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    height: 85vh;
+  }
   //   align-items: center;
 
   //   margin-bottom: -8rem;
 
   &__box {
-    height: 60rem;
     width: 50rem;
     background-color: $white;
 
-    margin: 5rem 0rem;
-    padding: 4rem 8rem;
+    @media only screen and (max-width: $bp-smallest) {
+      width: 95%;
+    }
 
+    margin: 5rem 0rem;
+
+    // justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    // justify-content: center;
 
     box-shadow: 0 0.5rem 1rem rgba($color: $black, $alpha: 0.3);
+
+    &-upper {
+      padding: 4rem 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 4rem 2rem;
+      }
+    }
+
+    &-bottom {
+      background-color: $gray-1;
+      flex: 1;
+      padding: 4rem 8rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 4rem 2rem;
+      }
+    }
   }
 
   &__heading {
     font-size: 2.5rem;
+    text-align: center;
   }
 
   &__input-container {
@@ -56,6 +93,31 @@
   //     box-shadow: 0 0.5rem 1rem rgba($color: $light-green-2, $alpha: 0.3);
   //   }
 
+  &__or {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    align-self: stretch;
+    margin-bottom: 2rem;
+
+    &-line {
+      height: 1px;
+      background-color: lighten($color: $gray-2, $amount: 50%);
+      flex: 1;
+
+      &--2 {
+        background-color: lighten($color: $gray-2, $amount: 20%);
+      }
+    }
+
+    &-text {
+      margin: 0 1rem;
+      font-size: 1.4rem;
+      color: rgba($color: $black, $alpha: 0.5);
+    }
+  }
+
   &__button-continue {
     align-self: stretch;
     padding: 0.5rem 3rem;
@@ -66,21 +128,34 @@
     }
   }
 
+  &__button-sign-up {
+    // align-self: stretch;
+    width: 60%;
+    font-weight: 500;
+  }
+
   &__button-google {
     margin-bottom: 2rem;
     align-self: stretch;
+    box-shadow: 0 0.1rem 1rem rgba($color: $black, $alpha: 0.3);
 
     &:hover {
-      box-shadow: 0 0.1rem 1rem rgba($color: $black, $alpha: 0.3);
+      box-shadow: 0 0.1rem 1.5rem rgba($color: $black, $alpha: 0.3);
     }
   }
 
   &__button-apple {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     align-self: stretch;
+    box-shadow: 0 0.1rem 1rem rgba($color: $black, $alpha: 0.3);
 
     &:hover {
-      box-shadow: 0 0.1rem 1rem rgba($color: $black, $alpha: 0.3);
+      box-shadow: 0 0.1rem 1.5rem rgba($color: $black, $alpha: 0.3);
     }
+  }
+
+  &__bottom {
+    background-color: $gray-1;
+    flex: 1;
   }
 }

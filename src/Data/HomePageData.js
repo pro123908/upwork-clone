@@ -304,7 +304,7 @@ export const linksBrowseArray = [
 export const navbarMobileLinks = [
   { route: "https://www.upwork.com/i/overview/", title: "How it works" },
   { route: "https://www.upwork.com/enterprise/", title: "Enterprise" },
-  { route: "https://www.upwork.com/ab/account-security/login", title: "Login" },
+  { route: "/login", title: "Login" },
   { route: "", title: "Browse" },
   { route: "", title: "Solutions" },
   { route: "", title: "About Us" },
@@ -322,7 +322,7 @@ export const navbarDesktopLinks = [
   { route: "", title: "Solutions" },
   { route: "https://www.upwork.com/enterprise/", title: "Enterprise" },
   {
-    route: "https://www.upwork.com/ab/account-security/login",
+    route: "/login",
     title: "Log in",
   },
   { route: "https://www.upwork.com/signup/?dest=home", title: "Sign up" },

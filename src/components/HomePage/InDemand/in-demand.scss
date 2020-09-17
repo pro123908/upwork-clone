@@ -109,6 +109,10 @@
       padding: 0.8rem 3rem;
       width: 18rem;
 
+      &:first-child {
+        margin-right: 2rem;
+      }
+
       @media only screen and (max-width: $bp-minimal) {
         width: 100%;
       }

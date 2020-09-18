@@ -27,7 +27,7 @@
 
   @media only screen and (max-width: $bp-medium) {
     // flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   @media only screen and (max-width: $bp-minimal) {
@@ -190,6 +190,8 @@
 
   &__logo {
     display: flex;
+    margin-right: 3rem;
+
     img {
       height: 3.5rem;
 
@@ -205,8 +207,6 @@
     @media only screen and (max-width: $bp-minimal) {
       margin-right: auto;
     }
-
-    margin-right: 3rem;
   }
 
   &__input {
@@ -217,7 +217,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 2rem;
+    margin-right: auto;
+    transition: width 0.2s;
+
+    i {
+      cursor: pointer;
+    }
+
+    &:focus-within {
+      width: 45rem;
+    }
 
     @media only screen and (max-width: $bp-medium) {
       margin-right: 0;

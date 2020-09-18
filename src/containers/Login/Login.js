@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 
 import Navbar from "../../components/Navbar";
 
-const login = () => {
+const Login = () => {
   return (
     <>
       <Navbar />
@@ -44,9 +45,12 @@ const login = () => {
               <div className="upwork-login__or-text">New to Upwork?</div>
               <div className="upwork-login__or-line upwork-login__or-line--2"></div>
             </div>
-            <button className="button white-button upwork-login__button-sign-up">
+            <Link
+              to="/sign-up"
+              className="link button white-button upwork-login__button-sign-up"
+            >
               Sign Up
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -55,4 +59,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

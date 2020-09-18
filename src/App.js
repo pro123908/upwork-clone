@@ -5,10 +5,12 @@ import Login from "./containers/Login/Login";
 
 import "./App.scss";
 import { SignUp } from "./containers/SignUp/SignUp";
+import ScrollToTop from "./components/Misc/ScrollToTop/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/login" component={Login} exact />

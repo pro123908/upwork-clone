@@ -148,7 +148,9 @@ const Navbar = ({ showSearch, showNavLinks, showMobileNav }) => {
         ""
       )}
       <div className="navbar__logo">
-        <img src={NavbarLogo} />
+        <Link to="/">
+          <img src={NavbarLogo} />
+        </Link>
       </div>
       {showSearch ? (
         <div className="navbar__input">

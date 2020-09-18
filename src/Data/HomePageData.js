@@ -325,5 +325,5 @@ export const navbarDesktopLinks = [
     route: "/login",
     title: "Log in",
   },
-  { route: "https://www.upwork.com/signup/?dest=home", title: "Sign up" },
+  { route: "/sign-up", title: "Sign up" },
 ];

@@ -17,7 +17,7 @@ const Navbar = ({ showSearch, showNavLinks, showMobileNav }) => {
 
   const navbarDesktopLinksContent = navbarDesktopLinks.map(
     ({ title, route }, index) => {
-      if (title === "Log in") {
+      if (title === "Log in" || "Sign up") {
         return (
           <Link
             key={index}
@@ -134,13 +134,12 @@ const Navbar = ({ showSearch, showNavLinks, showMobileNav }) => {
                 {navbarMobileLinksContent}
               </div>
               <div className="mobile-nav__sign-up">
-                <a
+                <Link
                   className="link green-button mobile-nav__sign-up-btn"
-                  href="https://www.upwork.com/signup/?dest=home"
-                  target="_blank"
+                  to="/sign-up"
                 >
                   Sign Up
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
+import HireGuidelines from "../../components/HireGuidelines/HireGuidelines";
 import Trusted from "../../components/HomePage/Trusted";
 import GoogleButton from "../../components/Misc/GoogleButton/GoogleButton";
 import InputWithButton from "../../components/Misc/InputWithButton/InputWithButton";
@@ -27,6 +28,7 @@ export const SignUp = () => {
       </div>
 
       <Trusted />
+      <HireGuidelines />
       <Footer />
     </>
   );

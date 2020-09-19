@@ -1,0 +1,47 @@
+.upwork-checkbox-with-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &__checkbox {
+    -webkit-appearance: none;
+    background-color: $white;
+    border: 1px solid #cacece;
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    //   inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 0.8rem;
+    // border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+
+    margin-right: 1rem;
+
+    &:active {
+      background-color: $light-green-4;
+
+      //   border: 1px solid #adb8c0;
+      //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+      //     inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+      //     inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+      color: $light-green-4;
+    }
+
+    &:checked {
+      background-color: $light-green-4;
+    }
+
+    &:checked:after {
+      content: "\2714";
+      font-size: 1.6rem;
+      position: absolute;
+      top: -2px;
+      left: 2px;
+      color: $white;
+    }
+  }
+
+  &__text {
+    font-size: 1.3rem;
+  }
+}

@@ -6,6 +6,7 @@ import Login from "./containers/Login/Login";
 import "./App.scss";
 import { SignUp } from "./containers/SignUp/SignUp";
 import ScrollToTop from "./components/Misc/ScrollToTop/ScrollToTop";
+import Password from "./containers/Password/Password";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" component={HomePage} exact />
         <Route path="/login" component={Login} exact />
         <Route path="/sign-up" component={SignUp} exact />
+        <Route path="/password" component={Password} exact />
       </Switch>
     </Router>
   );

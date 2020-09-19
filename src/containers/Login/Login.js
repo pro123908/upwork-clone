@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import InputWithButton from "../../components/Misc/InputWithButton/InputWithButton";
 
 import Navbar from "../../components/Navbar";
 
@@ -12,7 +13,7 @@ const Login = () => {
         <div className="upwork-login__box">
           <div className="upwork-login__box-upper">
             <div className="upwork-login__heading">Log in and get to work</div>
-            <div className="upwork-login__input-container">
+            {/* <div className="upwork-login__input-container">
               <i class="fas fa-user icon-green"></i>
               <input
                 type="email"
@@ -22,7 +23,13 @@ const Login = () => {
             </div>
             <button className="button green-button upwork-login__button-continue">
               Continue
-            </button>
+            </button> */}
+
+            <InputWithButton
+              buttonText="Continue"
+              placeholder="Username or Email"
+              route="/password"
+            />
             <div className="upwork-login__or">
               <div className="upwork-login__or-line"></div>
               <div className="upwork-login__or-text">or</div>

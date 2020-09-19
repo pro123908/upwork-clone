@@ -23,6 +23,7 @@ export const SignUp = () => {
           <InputWithButton
             placeholder="Work Email Address"
             buttonText="Continue with Email"
+            route="/password"
           />
         </div>
       </div>

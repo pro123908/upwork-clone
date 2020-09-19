@@ -327,3 +327,22 @@ export const navbarDesktopLinks = [
   },
   { route: "/sign-up", title: "Sign up" },
 ];
+
+export const hireGuidelineArray = [
+  {
+    image: Talent,
+    title: "Find what you need",
+    desc:
+      "Choose from specialized freelancers and agencies with 5,000+ skills.",
+  },
+  {
+    image: Instantly,
+    title: "Post today, hire tomorrow",
+    desc: "Get custom quotes right away on terms you negotiate directly.",
+  },
+  {
+    image: OnePlace,
+    title: "Engage with confidence",
+    desc: "Only pay for work you authorize, with secure billing and invoices.",
+  },
+];

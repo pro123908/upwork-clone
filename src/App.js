@@ -4,7 +4,7 @@ import HomePage from "./containers/HomePage";
 import Login from "./containers/Login/Login";
 
 import "./App.scss";
-import { SignUp } from "./containers/SignUp/SignUp";
+import SignUp from "./containers/SignUp/SignUp";
 import ScrollToTop from "./components/Misc/ScrollToTop/ScrollToTop";
 import Password from "./containers/Password/Password";
 

@@ -1,34 +1,12 @@
 import React from "react";
 import HireGuideline from "./HireGuideline";
 
-import Talent from "../../assets/HomePage/BetterMatch/talentNetwork.svg";
-import Instantly from "../../assets/HomePage/BetterMatch/instantly.svg";
-import OnePlace from "../../assets/HomePage/BetterMatch/onePlace.svg";
+import { hireGuidelineArray } from "../../Data/HomePageData";
 
 const HireGuidelines = () => {
-  let hireGuidelineArray = [
-    {
-      image: Talent,
-      title: "Find what you need",
-      desc:
-        "Choose from specialized freelancers and agencies with 5,000+ skills.",
-    },
-    {
-      image: Instantly,
-      title: "Post today, hire tomorrow",
-      desc: "Get custom quotes right away on terms you negotiate directly.",
-    },
-    {
-      image: OnePlace,
-      title: "Engage with confidence",
-      desc:
-        "Only pay for work you authorize, with secure billing and invoices.",
-    },
-  ];
-
   let hireGuidelineContent = hireGuidelineArray.map(
-    ({ image, title, desc }) => (
-      <HireGuideline image={image} title={title} desc={desc} />
+    ({ image, title, desc }, index) => (
+      <HireGuideline image={image} title={title} desc={desc} key={index} />
     )
   );
   return (

@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import InputWithButton from "../../components/Misc/InputWithButton/InputWithButton";
+import { GoogleLogin } from "react-google-login";
+// import config from "../../config/config";
 
 import Navbar from "../../components/Navbar";
+import Registration from "../HOC/Registration";
 
-const Login = () => {
+const Login = ({
+  email,
+  setEmail,
+  googleData,
+  setGoogleData,
+  googleResponseCallback,
+}) => {
   return (
     <>
       <Navbar />
@@ -29,6 +38,18 @@ const Login = () => {
               buttonText="Continue"
               placeholder="Username or Email"
               route="/password"
+              inputValue={email}
+              setInputValue={setEmail}
+            />
+            <GoogleLogin
+              clientId="1060413273300-97btv9il6jldv45easm2v820me85r4mq.apps.googleusercontent.com"
+              style={{
+                backgroundColor: "green",
+                color: "red",
+                textAlign: "center",
+              }}
+              accessType="offline"
+              theme={"dark"}
             />
             <div className="upwork-login__or">
               <div className="upwork-login__or-line"></div>
@@ -66,4 +87,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Registration(Login);

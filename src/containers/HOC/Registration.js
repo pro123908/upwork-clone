@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Registration = (AuthComponent) => {
-  const UpdatedAuthComponent = () => {
+  const UpdatedAuthComponent = (props) => {
     const [email, setEmail] = useState("");
     const [googleData, setGoogleData] = useState({});
 
@@ -15,6 +15,7 @@ const Registration = (AuthComponent) => {
         googleData={googleData}
         setGoogleData={setGoogleData}
         googleResponseCallback={googleResponseCallback}
+        {...props}
       />
     );
   };

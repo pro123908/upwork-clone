@@ -8,13 +8,35 @@ import SignUp from "./containers/SignUp/SignUp";
 import ScrollToTop from "./components/Misc/ScrollToTop/ScrollToTop";
 import Password from "./containers/Password/Password";
 
+import { FirebaseContext } from "./components/Firebase";
+
 const App = () => {
   return (
     <Router>
       <ScrollToTop />
       <Switch>
-        <Route path="/" component={HomePage} exact />
-        <Route path="/login" component={Login} exact />
+        <Route
+          path="/"
+          component={() => (
+            <FirebaseContext.Consumer>
+              {(firebase) => {
+                return <HomePage firebase={firebase} />;
+              }}
+            </FirebaseContext.Consumer>
+          )}
+          exact
+        />
+        <Route
+          path="/login"
+          component={() => (
+            <FirebaseContext.Consumer>
+              {(firebase) => {
+                return <Login firebase={firebase} />;
+              }}
+            </FirebaseContext.Consumer>
+          )}
+          exact
+        />
         <Route path="/sign-up" component={SignUp} exact />
         <Route path="/password" component={Password} exact />
       </Switch>

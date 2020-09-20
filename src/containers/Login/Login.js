@@ -14,7 +14,9 @@ const Login = ({
   googleData,
   setGoogleData,
   googleResponseCallback,
+  firebase,
 }) => {
+  console.log(firebase);
   return (
     <>
       <Navbar />
@@ -41,22 +43,16 @@ const Login = ({
               inputValue={email}
               setInputValue={setEmail}
             />
-            <GoogleLogin
-              clientId="1060413273300-97btv9il6jldv45easm2v820me85r4mq.apps.googleusercontent.com"
-              style={{
-                backgroundColor: "green",
-                color: "red",
-                textAlign: "center",
-              }}
-              accessType="offline"
-              theme={"dark"}
-            />
+
             <div className="upwork-login__or">
               <div className="upwork-login__or-line"></div>
               <div className="upwork-login__or-text">or</div>
               <div className="upwork-login__or-line"></div>
             </div>
-            <button className="button upwork-login__button-google google-button">
+            <button
+              className="button upwork-login__button-google google-button"
+              onClick={firebase.signUserWithGoogle}
+            >
               <i className="fab fa-google google-button__icon"></i>
               <span className="google-button__text">Sign In with Google</span>
             </button>

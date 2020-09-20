@@ -12,7 +12,8 @@ import Banner from "../../components/HomePage/Banner";
 import Footer from "../../components/HomePage/Footer";
 import Navbar from "../../components/Navbar";
 
-const HomePage = () => {
+const HomePage = ({ firebase }) => {
+  console.log(firebase);
   return (
     <div className="upwork-home-page">
       <Navbar showSearch showNavLinks showMobileNav />

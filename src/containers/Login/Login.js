@@ -16,7 +16,6 @@ const Login = ({
   googleResponseCallback,
   firebase,
 }) => {
-  console.log(firebase);
   return (
     <>
       <Navbar />
@@ -51,7 +50,9 @@ const Login = ({
             </div>
             <button
               className="button upwork-login__button-google google-button"
-              onClick={firebase.signUserWithGoogle}
+              onClick={() =>
+                firebase.signUserWithGoogle(googleResponseCallback)
+              }
             >
               <i className="fab fa-google google-button__icon"></i>
               <span className="google-button__text">Sign In with Google</span>

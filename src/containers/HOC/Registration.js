@@ -7,6 +7,7 @@ const Registration = (AuthComponent) => {
 
     const googleResponseCallback = (googleData) => {
       setGoogleData(googleData);
+      console.log("Google Data => ", googleData);
     };
     return (
       <AuthComponent

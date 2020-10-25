@@ -18,7 +18,8 @@ class Firebase {
 
     this.auth = app.auth();
 
-    this.provider = new app.auth.GoogleAuthProvider();
+    this.provider = new app.auth.GithubAuthProvider();
+    console.log("In firebase constructor ===");
   }
 
   signUserWithGoogle = (googleResponseCallback) => {
